@@ -4,7 +4,7 @@ Este es un proyecto de desarrollo backend realizado como parte del curso de la p
 
 ## Comandos de Ejecución
 
-Para ejecutar el proyecto, asegúrate de tener instalado Java y Maven. Luego, puedes utilizar los siguientes comandos:
+Para ejecutar el proyecto, asegúrate de tener instalado Java. Luego, puedes utilizar los siguientes comandos:
 
 1. **Compilar el proyecto**:
 
