@@ -1,10 +1,3 @@
-package com.challenge.audioplayer.main;
-
-import com.challenge.audioplayer.models.Audio;
-// import com.challenge.audioplayer.models.Favorite;
-// import com.challenge.audioplayer.models.Song;
-// import com.challenge.audioplayer.models.Podcast;
-
 public class Main {
     public static void main(String[] args) {
         // Song song = new Song();
@@ -31,7 +24,7 @@ public class Main {
 
 
 
-        //test datasert
+        //test dataset
 
         Audio[] audios = {
             new Audio("Song 1", 120, 500, 4),
@@ -88,7 +81,8 @@ public class Main {
         Audio showAudio = new Audio();
 
         
-        showAudio.showList(audios);
+        //showAudio.showList(audios);
+        showAudio.showTitle(audios);
     }
     
 }

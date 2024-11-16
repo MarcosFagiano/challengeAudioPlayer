@@ -1,5 +1,3 @@
-package com.challenge.audioplayer.models;
-
 public class Podcast extends Audio {
     public Podcast(String title, int totalLikes, int totalPlay, int calification) {
         super(title, totalLikes, totalPlay, calification);

@@ -1,5 +1,3 @@
-package com.challenge.audioplayer.models;
-
 import java.util.Scanner;
 
 public class Audio implements Interface {
@@ -55,19 +53,47 @@ public class Audio implements Interface {
     // interface
     @Override
     public void showTitle(Audio[] audios) {
-       
+        try {
+            int count = 1;
+            System.out.println("Titulos:");
+            for (Audio audio : audios) {
+                count++;
+                System.out.println("""
+                        [%d] %s
+                        """.formatted(count, audio.title));
+            }
+        } catch (Exception e) {
+            throw new UnsupportedOperationException("No se pudo cargar la lista, o la lista esta vacia.");
+
+        }
     }
 
     @Override
     public void showList(Audio[] audios) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'showList'");
+        try {
+            for (Audio audio : audios) {
+                System.out.println("""
+                        Titulo: %s | Reproducciones: %d | Likes: %d | Calificacion: %d
+                        """.formatted(audio.title, audio.totalPlay, audio.totalLikes, audio.calification));
+
+            }
+        } catch (Exception e) {
+            throw new UnsupportedOperationException("No se pudo cargar la lista, o la lista esta vacia.");
+
+        }
     }
 
     @Override
     public void insertAudio(Audio audio) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'insertAudio'");
+        try {
+            Audio input = new Audio();
+            input.calification = audio.calification;
+            input.title = audio.title;
+            input.totalLikes = audio.totalLikes;
+            input.totalPlay = audio.totalPlay;
+        } catch (Exception e) {
+            throw new UnsupportedOperationException("No se pudo cargar el nuevo audio. \nError:" + e);
+        }
     }
 
     @Override
@@ -109,8 +135,6 @@ public class Audio implements Interface {
         kScanner.close();
     }
 
-
-
     public Audio(String title, int totalLikes, int totalPlay, int calification) {
         this.title = title;
         this.totalLikes = totalLikes;
@@ -118,13 +142,10 @@ public class Audio implements Interface {
         this.calification = calification;
     }
 
-
-    //test dataset
+    // test dataset
 
     public Audio() {
-        //TODO Auto-generated constructor stub
+        // TODO Auto-generated constructor stub
     }
 
-
-    
 }

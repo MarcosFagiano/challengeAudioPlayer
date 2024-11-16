@@ -1,5 +1,3 @@
-package com.challenge.audioplayer.models;
-
 public class Song extends Audio {
 
     public Song(String title, int totalLikes, int totalPlay, int calification) {

@@ -1,5 +1,3 @@
-package com.challenge.audioplayer.models;
-
 public interface Interface {
     void showMenu();
 
