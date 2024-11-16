@@ -4,15 +4,12 @@ Audio Player Application es una aplicación básica para gestionar y mostrar aud
 
 ## Características
 
-<<<<<<< HEAD
 - Gestión de canciones y podcasts.
 - Incremento de reproducciones y "me gusta".
 - Listado de audios con detalles como título, calificación y reproducciones.
 - Mantenimiento de una lista de favoritos basada en calificaciones.
 - Fácil expansión para agregar más tipos de audios.
-=======
 Para ejecutar el proyecto, asegúrate de tener instalado Java. Luego, puedes utilizar los siguientes comandos:
->>>>>>> 5fa7d6a41ff7b3879699f9e9d877a98c14f0d8b6
 
 ## Estructura del Proyecto
 
